@@ -10,5 +10,11 @@ package part_01;
  */
 
 public class Exercise_06 {
-
+    public static void main(String[] args) {
+        int sum = 0;
+        for (int a = 1; a<=17; a+=2){
+            sum+=a;
+        }
+        System.out.println(sum);
+    }
 }
