@@ -8,5 +8,14 @@ package part_01;
  *
  */
 public class Exercise_09 {
+    public static void main(String[] args) {
+        double width = 2.4;
+        double height = 6.4;
 
+        double perimeter = ((width+height)*2);
+        double area = width*height;
+
+        System.out.println("Perimeter of the rectangle is " + perimeter);
+        System.out.println("Area of the rectangle is " + area);
+    }
 }

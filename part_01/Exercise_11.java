@@ -14,5 +14,20 @@ package part_01;
  */
 
 public class Exercise_11 {
+    public static void main(String[] args) {
+        int population, birthrate, deathrate, immigration;
+
+        birthrate = (31556952/6);
+        deathrate = (31556952/12);
+        immigration = (31556952/40);
+
+        population = (birthrate - deathrate + immigration); //one year population growth
+
+        int currentPop = 380123456;
+        int threePop = (currentPop + (3*population));
+
+        System.out.println("U.S Population in the next 3 years is around " + threePop);
+
+    }
 
 }

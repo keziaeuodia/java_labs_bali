@@ -1,6 +1,5 @@
 package part_05;
 
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 
 /**
  * Write two classes. In Class_01 (which contains the main()) create an instance of Class_02 and pass that instance

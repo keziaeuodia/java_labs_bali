@@ -12,4 +12,26 @@ package part_01;
 
 public class Exercise_07 {
 
+    public static void main(String[] args) {
+
+        double  a, b, c, d, pi;
+        double sum = 0;
+        double sum2 = 0;
+
+        for (a = 1; a<=11; a+=4){
+            c = (4 * (1/a));
+            sum+=c;
+        }
+
+        for (b = 3; b <= 11; b+=4){
+            d = (4 * (-1/b));
+            sum2+=d;
+        }
+        pi = sum+sum2;
+
+        System.out.println(pi);
+
+
+    }
+
 }

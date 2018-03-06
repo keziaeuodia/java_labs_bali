@@ -9,5 +9,13 @@ package part_01;
  */
 
 public class Exercise_10 {
+    public static void main(String[] args) {
+        double kmDist = 12;
+        double milesDist = 12*1.6;
+        double time = 0.55;
 
+        double speed = (milesDist/time);
+
+        System.out.println("Speed = " + speed);
+    }
 }
