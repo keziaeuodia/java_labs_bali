@@ -11,6 +11,22 @@ import java.util.Scanner;
  *
  */
 public class Exercise_08 {
+    public static void main(String[] args) {
+        System.out.print("Enter a number: ");
+        Scanner scanner = new Scanner(System.in);
+        int i = scanner.nextInt();
+        System.out.println();
 
+        int a = 0;
+
+        while (a != i){
+            System.out.println("nope");
+            a++;
+            if (a == i){
+                System.out.println("found you " + a + "!");
+            }
+        }
+
+    }
 }
 

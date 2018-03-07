@@ -8,7 +8,18 @@ package part_02;
  *
  */
 public class Exercise_09 {
+    public static void main(String[] args) {
+        char alph = 'z';
+//
+//        for(alph = 'z'; alph >= 'a'; alph--){
+//            System.out.println(alph);
+//        }
 
+        do {
+            System.out.println(alph);
+            alph--;
+        }while(alph >= 'a');
+    }
 }
 
 

@@ -13,7 +13,24 @@ import java.util.Scanner;
  *
  */
 public class Exercise_07 {
+    public static void main(String[] args) {
+        System.out.print("Minutes: ");
+        Scanner scanner = new Scanner(System.in);
+        int i = scanner.nextInt();
+        System.out.println();
 
+        int days = 1440;
+        int years = 525600;
+
+        if (i < 1440) {
+            System.out.println("It is less than a day.");
+        }else if (i < 525600){
+            System.out.println("It is " + (i/days) + " days.");
+        }else if (i >= 525600){
+            System.out.println("It is " + (i/years) + " year and " + (i%years/days) + " days.");
+        }
+
+    }
 }
 
 

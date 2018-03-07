@@ -17,5 +17,22 @@ import java.util.Scanner;
  */
 
 public class Exercise_12 {
+    public static void main(String[] args) {
+        System.out.print("Miles to drive: ");
+        Scanner scanner1 = new Scanner(System.in);
+        double miles = scanner1.nextDouble();
+        System.out.println();
+        System.out.print("MPG: ");
+        Scanner scanner2 = new Scanner(System.in);
+        double mpg = scanner2.nextDouble();
+        System.out.println();
+        System.out.print("Fuel price per gallon: ");
+        Scanner scanner3 = new Scanner(System.in);
+        double fuel = scanner3.nextDouble();
+        System.out.println();
 
+        double cost = (miles/mpg*fuel);
+
+        System.out.println("Cost of fuel: " + cost);
+    }
 }

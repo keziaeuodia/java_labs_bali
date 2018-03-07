@@ -12,5 +12,15 @@ import java.util.Scanner;
  */
 
 public class Exercise_03 {
+    public static void main(String[] args) {
+        System.out.print("Measurement in feet: ");
+        Scanner scanner = new Scanner(System.in);
+        double feet = scanner.nextDouble();
+        System.out.println();
+
+        double meters = feet*0.305;
+        System.out.println("Measurement in meters: " + meters);
+
+    }
 
 }
