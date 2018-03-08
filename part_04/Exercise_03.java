@@ -15,6 +15,22 @@ package part_04;
 public class Exercise_03 {
 
     public static void main(String[] strings) {
+        int[][] twoDArray = new int[5][10];
 
+        int a;
+
+        for (int i=0; i < 5; ++i){
+            for (a = 0; a < 10; a++){
+                twoDArray [i][a] = (i*10)+((a));
+//                System.out.print(twoDArray[i][a] + " ");
+            }
+//            System.out.println();
+        }
+        for (int[] outer : twoDArray){
+            for (int val : outer){
+                System.out.print(val + " ");
+            }
+            System.out.println();
+         }
     }
 }

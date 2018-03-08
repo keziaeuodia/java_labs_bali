@@ -13,6 +13,17 @@ package part_04;
 public class Exercise_05 {
 
     public static void main(String[] strings) {
+        int [] array = new int[10];
+
+        int i;
+
+        for (i = 0; i < 10; i++){
+            array[i] = i;
+        }
+
+        for (int val : array){
+            System.out.print(val + " ");
+        }
 
     }
 }

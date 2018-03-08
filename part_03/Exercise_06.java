@@ -35,9 +35,15 @@ class Exercise_06 {
         // Display results using a 12 hour clock, include AM or PM
 
         if (currentHour > 12){
-            System.out.println((currentHour-12)+":"+currentMin+":"+currentSec);
-        }else {
-            System.out.println(currentHour+":"+currentMin+":"+currentSec);
+            System.out.println((currentHour-12)+":"+currentMin+":"+currentSec + " PM");
+        }else if (currentHour < 0){
+            if ((currentHour+24) > 12){
+                System.out.println((currentHour+12)+":"+currentMin+":"+currentSec + " PM");
+            }else {
+                System.out.println((currentHour+24)+":"+currentMin+":"+currentSec + " AM");
+            }
+        }else{
+            System.out.println(currentHour+":"+currentMin+":"+currentSec + " AM");
         }
 
     }
