@@ -3,64 +3,70 @@ Answer the following questions
 
 
 1) What is an instance variable?
-
+    Instance variable is the variable declared inside a class, but outside a method
 
 2) How do you create a new object?
-
+    Class object = new Class(parameter);
 
 3) After creating a new object, how do you set that objects instance variables?
-
+    object.setVar();
 
 4) What is a reference variable? Why do you need to be careful with reference variables?
-
+    Reference variable refers to a memory address where the data is stored
 
 5) How many methods can you have in a class?
-
+    As many as we want
 
 6) How do you exit a method at any point?
-
+    return;
 
 7) What is the method signature required to return an "int" from a method?
-
+    int method(int a, int b){return a*b;}
 
 8) Assuming "int num = 10", what is the syntax to return "num" from a method?
-
+    int method(num){return num;}
 
 9) How do you pass a parameter to a method?
+    int method(int a, int b){}
 
 
 10) What is the method signature for a method named sum() that takes two int parameters and returns their sum as in int?
-
+    int add(int a, int b){return a+b;}
 
 11) What is a constructor?
+    A block of code similar to a method that's called when an instance of an object is created.
 
 
 12) How does Java treat a class without a constructor?
-
+    Providing a default constructor Class(){}
 
 13) What would the constructor for "public class Animal" look like?
-
+    public Animal(){}
 
 14) What is the effect of passing parameters to a constructor?
-
+    The object must pass in the parameters required when it is created.
 
 15) When should you pass parameters to a constructor?
-
+    When it requires some data from the object
 
 16) What does the finalize() method do?
-
+    It is used to perform cleanup operations on unmanaged resources held by the current object before the object is destroyed.
 
 17) What does the "this" keyword do?
-
+    Refers to the variable of the class
 
 18) When should you use the "this" keyword?
-
+    When we want to use the variable of a class
 
 19) Write an example of the "this" keyword in action.
-
+    public String name, color;
+    public Animal(String name, String color){
+        this.name = name;
+        this.color = color;
+    }
 
 20.) EXplain the difference between static and non-static variables.
-
+    static variables belong to a class, non-static variables belong to an instance of the class.
 
 21.) Explain the difference between static and non-static methods.
-
+    static methods belong to a class, non-static methods belong to an object of the class.

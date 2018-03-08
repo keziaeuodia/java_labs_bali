@@ -9,3 +9,20 @@ package part_03;
 
  */
 
+public class Exercise_02{
+    public static void main(String[] args) {
+        int mult1 = 5, mult2 = 6, add1 = 4, add2 = 6;
+
+        int multResult = multiply(mult1,mult2 );
+        int addResult = add(add1,add2 );
+
+        System.out.println((multResult+addResult));
+
+    }
+    public static int multiply (int a, int b){
+        return a * b;
+    }
+    public static int add (int c, int d){
+        return c + d;
+    }
+}

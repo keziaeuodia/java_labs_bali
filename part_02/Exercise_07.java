@@ -19,14 +19,14 @@ public class Exercise_07 {
         int i = scanner.nextInt();
         System.out.println();
 
-        int days = 1440;
-        int years = 525600;
+        int days = 60*24;
+        int years = days*365;
 
-        if (i < 1440) {
+        if (i < days) {
             System.out.println("It is less than a day.");
-        }else if (i < 525600){
+        }else if (i < years){
             System.out.println("It is " + (i/days) + " days.");
-        }else if (i >= 525600){
+        }else if (i >= years){
             System.out.println("It is " + (i/years) + " year and " + (i%years/days) + " days.");
         }
 
