@@ -7,3 +7,19 @@ package part_05;
  * out "Hello Recursion!" 10 times.
  *
  */
+public class Exercise_05{
+    public static void main(String[] args) {
+        Exercise_05 hello = new Exercise_05();
+        String hi = "Hello Recursion!";
+        System.out.println(hello.recursion(5));
+
+    }
+
+    int recursion(int i){
+        int repeat;
+        if (i == 0){return 0;}
+        repeat = recursion((i-1));
+        System.out.println("hello recursion");
+        return repeat;
+    }
+}

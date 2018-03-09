@@ -1,4 +1,4 @@
-package part_05;
+package part_05.Exercise_07;
 
 /**
  * Write two classes. Class_01 should have the main(). Class_02 should have various instance variables. At least one of
@@ -9,9 +9,9 @@ package part_05;
 
 class BaseballTeams {
 
-    private String league;
-    private char division;
-    static int numOfPlayers;
+    private String league; //instance variable 1
+    private char division; //instance variable 2
+    static int numOfPlayers; //static instance variable
 
     public String getLeague() {
         return league;
@@ -43,13 +43,13 @@ class TeamConstructor {
 
     public static void main(String[] args) {
 
-        BaseballTeams blueJays = new BaseballTeams();
-        BaseballTeams indians = new BaseballTeams();
-        BaseballTeams reds = new BaseballTeams();
-        BaseballTeams rockies = new BaseballTeams();
+        BaseballTeams blueJays = new BaseballTeams(); //instance of class2 1
+        BaseballTeams indians = new BaseballTeams(); //instance of class2 2
+        BaseballTeams reds = new BaseballTeams(); //instance of class2  3
+        BaseballTeams rockies = new BaseballTeams(); //instance of class2 4
 
 
-        blueJays.setDivision('E');
+        blueJays.setDivision('E'); //set instance variable of class 2
         blueJays.setLeague("AL");
 
         indians.setLeague("AL");
@@ -61,7 +61,7 @@ class TeamConstructor {
         rockies.setLeague("NL");
         rockies.setDivision('W');
 
-        BaseballTeams.numOfPlayers=32;
+        BaseballTeams.numOfPlayers=32; //set static variable
 
         System.out.println("The Blue Jays have " + " " + BaseballTeams.numOfPlayers + " " + "players");
         System.out.println("The Blue Jays are in the" + " " + blueJays.getLeague());

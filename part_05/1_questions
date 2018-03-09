@@ -1,58 +1,95 @@
 Answer the following:
 
 1) What are the access control modifiers (acm) provided in Java?
+    public, private, protected
 
 2) Briefly explain each acm and how they differentiate from each other?
+    public member is accessible by members of any class
+    private member is only accessible by the other members of its class
+    protected member is only accessible by the class of the same package
 
 3) Why do we use acm's?
+    to help preventing the misuse of an object
 
 4) What is the risk of not using acm's?
+    it is prone to tampering
 
 5) Write a method signature that receives an object of type "Car" as a parameter.
+    method(Car object){}
 
 6) Write a method signature that returns an object of type "Car".
+    Car method (){return carobject;}
 
 7) What is a very important consideration to keep in mind when passing objects (hint: by reference) from one
 method to another?
+    That the changes made to the parameter will affect the argument used to call the subroutine.
 
 8) What is method overloading?
+    Writing one method multiple times but changes the argument that it takes
 
 9) Why is method overloading useful? (Hint: as compared to the implementation in the C language.)
+    Because it is making the method applicable in many forms, which suports poly-morphism
 
 10) How do you overload a method? What signifies that a method is being overloaded?
+    By writing the same method, but changing the parameters that it takes and the code inside the method
 
 11) Below, by writing just the method signature, demonstrate overloading a method 3 times.
+    int method(int a){int b = 0; return a+b;}
+    int method(int a, int b){return a+b;}
+    int method(int a, int b, int c){return a+b+c;}
 
 12) How do you overload a constructor? What signifies that a constructor is being overloaded?
 
+
 13) Why do we overload constructors?
+    So that it takes in parameters which allows us to construct the objects in variety of ways.
 
 14) Below, by writing just the constructor signature, demonstrate overloading a constructor 3 times.
+    Class(String a){}
+    Class(String a, int b){}
+    Class(String a, int b, int c){}
 
 15) What is recursion?
+    The process of defining something in terms of itself and is somewhat similar to a circular definition.
 
 16) What important considerations must you keep in mind when using recursion?
+    That as each recursive call returns, the old local variables and parameters are removed from the stack
+    and execution resumes at the point of the call inside the method
 
 17) How do you make a method recursive?
+    By calling itself inside its method body
 
 18) How do you escape a recursive method?
+    by having a conditional statement
 
 19) Explain what "static" is all about?
+    Static members are accessible before any objects of its class are created
 
 20) When should you use "static"?
+    When the member of the class is not referring to an object
 
 21) What differentiates static variables from instance variables?
+    Static variables only have one copy that is shared by all the different objects of a class.
+    Instance variables let every object to have its own personal copy of the variable.
 
 22) What is a the quicksort? Briefly describe how the quicksort works.
+    It is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order.
+    By partitioning the array and sorting each partition
 
 23) What is a nested, or inner, class?
+    A member of its enclosing class
 
 24) What is the scope of a nested class?
+    Within its immediate enclosing scope (curly brackets)
 
 25) What is a variable-arity method?
+    A method that accepts an arbitrary set of arguments.
 
 26) What makes a variable-arity method unique? When should you use it?
+    It is useful for any method that needs to deal with an indeterminate number of objects.
 
 27) What is the shorthand name for variable-arity?
+    Varargs
 
 28) Why important considerations must you keep in mind when using variable-arity methods? (hint: ambiguity)
+    When there are more than one method, and both the methods are valid candidates for invocation.

@@ -1,4 +1,4 @@
-package part_05;
+package part_05.Exercise_02;
 
 
 /**
@@ -9,3 +9,9 @@ package part_05;
  * flow of execution and the varying state of each private variable. You can name these classes whatever you want.
  *
  */
+
+//class1
+//main()
+//instance of class2;
+//method1; var class2
+//method2; var class2
