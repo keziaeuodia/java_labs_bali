@@ -15,22 +15,12 @@ that apply to that subclass, ie Animal -> Mammal -> Whale.
 
 package part_07;
 
+interface Academy{
 
-public class Cordota_Phylum {
+    public String [] programs();
 
-boolean
+    public int remainingSeats();
 
-
-
-
+    public void memo();
 }
 
-
-
-class Carnivora_Order {
-
-}
-
-class Ursidae_Family {
-
-}
