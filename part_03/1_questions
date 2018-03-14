@@ -12,7 +12,8 @@ Answer the following questions
     object.setVar();
 
 4) What is a reference variable? Why do you need to be careful with reference variables?
-    Reference variable refers to a memory address where the data is stored
+    Reference variable points to an object.
+    Because when you passed a value it changes the value in other objects
 
 5) How many methods can you have in a class?
     As many as we want
@@ -28,7 +29,7 @@ Answer the following questions
 
 9) How do you pass a parameter to a method?
     int method(int a, int b){}
-
+    int method(5,10){}
 
 10) What is the method signature for a method named sum() that takes two int parameters and returns their sum as in int?
     int add(int a, int b){return a+b;}
@@ -53,7 +54,7 @@ Answer the following questions
     It is used to perform cleanup operations on unmanaged resources held by the current object before the object is destroyed.
 
 17) What does the "this" keyword do?
-    Refers to the variable of the class
+    Refers to the members of the class
 
 18) When should you use the "this" keyword?
     When we want to use the variable of a class
@@ -65,8 +66,10 @@ Answer the following questions
         this.color = color;
     }
 
-20.) EXplain the difference between static and non-static variables.
+    in getters and setters and constructor when you want to refer to a variable with the same name as the input parameter
+
+20) Explain the difference between static and non-static variables.
     static variables belong to a class, non-static variables belong to an instance of the class.
 
-21.) Explain the difference between static and non-static methods.
+21) Explain the difference between static and non-static methods.
     static methods belong to a class, non-static methods belong to an object of the class.

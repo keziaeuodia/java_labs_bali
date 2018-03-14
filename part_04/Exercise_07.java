@@ -14,20 +14,20 @@ class Stack {
     private char[] array;
     private int stackTop;
 
-    public Stack(int maxSize) {
+    private Stack(int maxSize) {
         this.maxSize = maxSize;
         array = new char[maxSize];
-        stackTop = -1;
+        stackTop = 0;
     }
-    public void push(char ch) {
-        array[++stackTop] = ch;
+    private void push(char ch) {
+        array[stackTop++] = ch;
     }
-    public char pop() {
-        return array[stackTop--];
+    private char pop() {
+        return array[--stackTop];
     }
 
     public static void main(String[] args) {
-        System.out.println("Enter a number between 1 to 27: ");
+        System.out.println("Enter a number between 1 to 26: ");
         Scanner scanner = new Scanner(System.in);
         int size = scanner.nextInt();
         Stack stack = new Stack(size);
@@ -38,6 +38,9 @@ class Stack {
             System.out.print(ch + " ");
             ch++;
         }
+
+        ch = stack.pop();
+        System.out.println("\n" + ch);
 
     }
 
