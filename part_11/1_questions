@@ -1,12 +1,17 @@
 1) Turn the following into a Generic interface:
 
-   public interface Consumer {
-       public void consumer(String parameter)
+   public interface Consumer <T> {
+       public void consumer (T parameter)
    }
 
 2) What are a few advantages of using Generic types?
+    Stronger type checks at compile time.
+    Elimination of casts.
+    Enabling programmers to implement generic algorithms.
 
 3) What is Type Erasure?
+    A feature in java that replaces all type parameters in generic types
+    with their bounds or Object if the type parameters are unbounded.
 
 4) Assuming the following snippet:
 
@@ -14,13 +19,15 @@
         return argument;
     }
 
-    Does this work?
+    Does this work? YES
     Integer i = returnType(1);
     String s = returnType("String");
 
 5) What is a Bounded Type Parameter?
+    Adding limitations to the Generic argument type by bounding it to a certain Class
 
 6) Demonstrate the use of Generic Wildcard in a method signature:
+
 
 7) What are bounded and unbounded wildcards in Generics?
 
