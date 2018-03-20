@@ -32,3 +32,4 @@
 7) What are bounded and unbounded wildcards in Generics?
 
 8) What is difference between List<? extends T>  and  List <? super T> ?
+    ? = anything that

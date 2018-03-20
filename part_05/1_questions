@@ -1,7 +1,7 @@
 Answer the following:
 
 1) What are the access control modifiers (acm) provided in Java?
-    public, private, protected
+    public, private, protected - available to the same package and subclasses, default - available to the same package only
 
 2) Briefly explain each acm and how they differentiate from each other?
     public member is accessible by members of any class
@@ -25,7 +25,7 @@ method to another?
     That the changes made to the parameter will affect the argument used to call the subroutine.
 
 8) What is method overloading?
-    Writing one method multiple times but changes the argument that it takes
+    Writing one method multiple times but changes the argument that it takes - same signature, different argument
 
 9) Why is method overloading useful? (Hint: as compared to the implementation in the C language.)
     Because it is making the method applicable in many forms, which suports poly-morphism
@@ -50,7 +50,7 @@ method to another?
     Class(String a, int b, int c){}
 
 15) What is recursion?
-    The process of defining something in terms of itself and is somewhat similar to a circular definition.
+    A method that calls itself
 
 16) What important considerations must you keep in mind when using recursion?
     That as each recursive call returns, the old local variables and parameters are removed from the stack
@@ -60,7 +60,7 @@ method to another?
     By calling itself inside its method body
 
 18) How do you escape a recursive method?
-    by having a conditional statement
+    by having a conditional statement/base case
 
 19) Explain what "static" is all about?
     Static members are accessible before any objects of its class are created
@@ -93,3 +93,6 @@ method to another?
 
 28) Why important considerations must you keep in mind when using variable-arity methods? (hint: ambiguity)
     When there are more than one method, and both the methods are valid candidates for invocation.
+    Varargs needs to be at the end of the parameters
+
+

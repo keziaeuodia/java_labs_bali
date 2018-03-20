@@ -11,38 +11,29 @@ public class Controller {
         String path4 = "/home/kezia/Documents/CodingNomads/labs/java_labs_bali/Challenges/file4.txt";
 
         Multithreading thread1 = new Multithreading("Thread1", path1);
-        Multithreading thread2 = new Multithreading("Thread2", path2);
-        Multithreading thread3 = new Multithreading("Thread3", path3);
-        Multithreading thread4 = new Multithreading("Thread4", path4);
-
-        try{
+        try {
             thread1.thrd.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Multithreading thread2 = new Multithreading("Thread2", path2);
+        try {
             thread2.thrd.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Multithreading thread3 = new Multithreading("Thread3", path3);
+        try {
             thread3.thrd.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Multithreading thread4 = new Multithreading("Thread4", path4);
+        try {
             thread4.thrd.join();
-        }catch (InterruptedException ie){
-            System.out.println(ie.toString());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
-
-        synchronized (thread4){
-            while (thread3.thrd.isAlive()){
-                while (thread2.thrd.isAlive()){
-                    while (thread1.thrd.isAlive()){
-
-                    }
-                }
-            }
-
-        }
-
-        do{
-            try{
-                Thread.sleep(100);
-            }catch (InterruptedException ie){
-                System.out.println(ie.toString());
-            }
-        }while (thread1.thrd.isAlive() || thread2.thrd.isAlive() || thread3.thrd.isAlive() || thread4.thrd.isAlive());
-
 
 
         System.out.println("Main Ending");

@@ -11,7 +11,7 @@
     Calling the parent class
 
 5) In what order are constructors called when there are multiple subclasses?
-    Super - Sub 1 - Sub 2
+    Super - Sub 1 - Sub 2 from top to bottom
 
 6) What does it mean when a method is overridden?
     Declaring a method in sub class which is already present in parent class

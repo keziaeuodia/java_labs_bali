@@ -4,10 +4,10 @@
     If you extended Thread, you'd have to create a new instance of your work for each thread.
 
 2) How do you start a thread using Runnable?
-    public void run()
+    newThread.start();
 
 3) How do you start a thread using Thread?
-    newThread.start();
+    start();
 
 4) How do you get a thread's name?
     by using getName() method

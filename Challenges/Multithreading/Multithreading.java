@@ -26,5 +26,23 @@ public class Multithreading implements Runnable{
         readFile(getPath());
     }
 
+    synchronized void readFile(String path){
+        try (
+            FileReader fr = new FileReader(path);
+            BufferedReader br = new BufferedReader(fr);
+            FileWriter fw = new FileWriter("/home/kezia/Documents/CodingNomads/labs/java_labs_bali/Challenges/file5.txt", true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            PrintWriter out = new PrintWriter(bw)
+        ){
+            String l;
 
+            while ((l = br.readLine()) != null){
+                out.println(l);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

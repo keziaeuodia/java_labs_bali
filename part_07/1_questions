@@ -27,3 +27,7 @@
 
 10) How many interfaces can a single class implement?
     more than 1
+
+11) What is a default interface method?
+    when we want to add a new method to an interface by giving it a default behavior without breaking the preexisting codes.
+    It doesn't force the class that implements the interface to implement it - it's optional.
